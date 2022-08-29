@@ -75,11 +75,11 @@
     RTCDefaultVideoDecoderFactory *decoderFactory = [[RTCDefaultVideoDecoderFactory alloc] init];
     RTCDefaultVideoEncoderFactory *encoderFactory = [[RTCDefaultVideoEncoderFactory alloc] init];
 
-    RTCVideoEncoderFactorySimulcast *simulcastFactory = [[RTCVideoEncoderFactorySimulcast alloc]  initWithPrimary:encoderFactory
-                                                                                                         fallback:encoderFactory];
+    // RTCVideoEncoderFactorySimulcast *simulcastFactory = [[RTCVideoEncoderFactorySimulcast alloc]  initWithPrimary:encoderFactory fallback:encoderFactory];
 
     _peerConnectionFactory = [[RTCPeerConnectionFactory alloc]
-                              initWithEncoderFactory:simulcastFactory
+                              // initWithEncoderFactory:simulcastFactory
+                               initWithEncoderFactory:encoderFactory
                               decoderFactory:decoderFactory];
 
 
