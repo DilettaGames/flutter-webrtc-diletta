@@ -15,7 +15,7 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'JitsiMeetSDK', '8.6.0'
+  s.dependency 'JitsiMeetSDK', '9.2.2'
   s.ios.deployment_target = '10.0'
   s.static_framework = true
 end
