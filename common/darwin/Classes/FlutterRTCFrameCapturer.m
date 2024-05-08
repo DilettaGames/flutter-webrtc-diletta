@@ -7,6 +7,8 @@
 
 #import "FlutterRTCFrameCapturer.h"
 
+#include "libyuv.h"
+
 #define clamp(a) (a>255?255:(a<0?0:a))
 
 @import CoreImage;
